@@ -1,0 +1,47 @@
+I.	Mô tả chung
+Ứng dụng gồm các chức năng sau:
+1.	Thêm học sinh (MSSV, First Name, Last Name, Grade, Image, Address, Notes)
+2.	Cập nhật thông tin học sinh
+3.	Xóa học sinh
+4.	Xem danh sách học sinh: tăng dần/giảm dần theo từng cột.
+5.	Import/Export danh sách học sinh ra file .csv
+Trong đó danh sách sinh viên được lưu dưới dạng file nhị phân (src/data/data.bin)
+ 
+II.	Chức năng chính
+1.	Thêm học sinh
+Khi bấm vào nút Add Student sẽ xuất hiện của sổ ADD STUDENT để nhập thông tin của sinh viên.
+ 
+Có thể load ảnh của sinh viên bằng cách bấm vào Load Image, sẽ xuất hiện hộp thoại file browser và người dùng cso thể chọn file ảnh phù hợp, ảnh sẽ được load trên màn hình. Khi nhập xong thì nhấn nút SUBMIT.
+
+ 
+Sau khi thêm, nhấn nút Save File để lưu dữu liệu. 
+ 
+2.	Cập nhật thông tin học sinh
+Có thể dễ dàng chỉnh sửa thông tin sinh viên bằng cách nhấn vào ô thông tin cần chỉnh sửa và tiến hành sửa.
+ 
+Sau đó nhấn nút Save File để lưu.
+3.	Xóa học sinh
+Đánh dấu vào ô checkbox ở mỗi sinh viên muốn xóa, sau đó nhấn nút Remove Student để xóa và nhấn Save File để lưu lại.
+ 
+4.	Xem danh sách học sinh theo thứ tự tăng/giảm dần
+Để xem danh sách học sinh theo thứ tự tăng/giảm, nhấn vào header của mỗi cột sẽ tự sắp xếp theo thứ tự mong muốn.
+ 
+5.	Import/Export danh sách học sinh
+Import file
+Nhấn vào nút Import File để import file csv, sau đó nhập đường dẫn hoặc chọn đường dẫn từ browser bằng cách nhấn vào nút search kế bên textfield, sau đó nhấn OK. 
+Danh sách sinh viên được import sẽ được thêm vào cuối danh sách sinh viên hiện tại.
+ 
+Sau đó nhấn vào Save File để lưu.
+
+Export file
+Nhấn vào nút Export File để export file csv, sau đó nhập hoặc chọn đường dẫn từ browser bằng cách nhấn vào nút search kế bên textfield và nhập tên file mong muốn (không bao gồm đuôi .csv). Cuối cùng nhấn OK.
+Danh sách sinh viên sẽ được export tại folder đã chọn với file name mà người dùng nhập.
+ 
+
+Note: Mọi thay đổi sẽ không được lưu lại nếu không nhấn nút Save File (lưu thông tin xuống file data.bin)
+III.	 Nơi lưu trữ
+Hình ảnh: 
+-	Tất cả hình ảnh của học sinh được load lên sẽ được lưu trong thư mục StudentImage (src/data/StudentImage).
+-	Hình ảnh, icon của ứng dụng được lưu trong thư mục images (src/images).
+Dữ liệu: thông tin của học sinh sẽ được lưu trong file data.bin (src/data/data.bin).
+
